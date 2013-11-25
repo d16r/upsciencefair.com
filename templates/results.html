@@ -1,43 +1,5 @@
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-
-        <title>UP Science Fair</title>
-    </head>
-    <body>
-         <!-- Static navbar -->
-         <div class="container">
-          <br>
-          <div class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="./index.html">UP Science Fair</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="./introduction.html">Introduction</a></li>
-                <li><a href="./materials.html">Materials, Methods</a></li>
-                <li class="active"><a href="./results.html">Results</a></li>
-                <li><a href="./conclusion.html">Conclusion</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-
+{% extends "_base.html" %}
+{% block content %}
           <div class="well">
             <h1>Results</h1>
             <p>This section should give a objective (unbiased) representation of trends, values, and calculations using charts, diagrams, graphs and other models to describe to the reader the data collected. In order to adequately do so, the results section needs to include these figures that are properly labeled with units for clear interpretation. Trends, values, and calculations should be visually shown through figures, but also reported in writing using explicit statements that capture the student’s understanding of the data presented.</p>
@@ -68,7 +30,4 @@
             </ul>
 
           </div>
-          <br><br><br>
-        </div><!-- container -->
-    </body>
-</html>
+{% endblock %}
