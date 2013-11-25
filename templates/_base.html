@@ -30,8 +30,10 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                {% block links %}
-                {% endblock %}
+                <li {% if request.endpoint == 'introduction' %} class='active' {% endif %}><a href="{{url_for('introduction')}}">Introduction</a></li>
+                <li {% if request.endpoint == 'materials' %} class='active' {% endif %}><a href="{{url_for('materials')}}">Materials, Methods</a></li>
+                <li {% if request.endpoint == 'results' %} class='active' {% endif %}><a href="{{url_for('results')}}">Results</a></li>
+                <li {% if request.endpoint == 'conclusion' %} class='active' {% endif %}><a href="{{url_for('conclusion')}}">Conclusion</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
