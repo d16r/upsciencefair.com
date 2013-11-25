@@ -26,14 +26,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="./">UP Science Fair</a>
+              <a class="navbar-brand" href="{{url_for('index')}}">UP Science Fair</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="./introduction">Introduction</a></li>
-                <li><a href="./materials">Materials, Methods</a></li>
-                <li><a href="./results">Results</a></li>
-                <li><a href="./conclusion">Conclusion</a></li>
+                <li><a href="{{url_for('introduction')}}">Introduction</a></li>
+                <li><a href="{{url_for('materials')}}">Materials, Methods</a></li>
+                <li><a href="{{url_for('results')}}">Results</a></li>
+                <li><a href="{{url_for('conclusion')}}">Conclusion</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
