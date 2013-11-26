@@ -2,3 +2,8 @@ th {
     width: 25%;
     text-align: center;
 }
+
+.center {
+    text-align: center;
+    color: rgb(24, 188, 156);
+}
